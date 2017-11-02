@@ -1,0 +1,7 @@
+Description:
+	This project is about a simulator of Internet routing and Congestion control algorithms. To create a tool with which theoretical analyses of networks can be validated. This program is able to take input of network format of user choice and run a simulation of described network. Data recorded from simulation will output graphs showing the progression of the specified variables over time. The congestion control includes TCP Reno and FAST-TCP. The program contains hosts, routers, flows, and links. Hosts represent individual endpoint computers. Routers represent the network equipment sitting between hosts. Links represent the communication lines connecting hosts and routers. Flows represent active connections. 
+
+PS: This is a team project. I have worked on main.cpp, Router.cpp and Router.hpp as well as MATLAB graphing. 
+
+Router.cpp and Router.hpp are written by me.
+main.cpp is written by member together. I write about 1/3 of main.cpp. 

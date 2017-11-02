@@ -1,0 +1,9 @@
+flow 0 0 1 0 0 9000 1000
+
+node 0 HOST
+node 1 HOST
+
+link 0 10000 10 524288 0 1
+
+host 0 0 0 0
+host 1 0 0 0

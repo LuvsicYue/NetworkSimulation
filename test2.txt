@@ -1,0 +1,49 @@
+flow 0 0 1 0 3 35000 500
+flow 1 2 3 0 1 15000 10000
+flow 2 4 5 2 3 30000 20000
+
+node 0 HOST
+node 1 HOST
+node 2 HOST
+node 3 HOST
+node 4 HOST
+node 5 HOST
+node 0 ROUTER
+node 1 ROUTER
+node 2 ROUTER
+node 3 ROUTER
+
+link 0 12500 10 1048576 2 6
+link 1 10000 10 1048576 6 7
+link 2 10000 10 1048576 7 8
+link 3 10000 10 1048576 8 9
+link 4 12500 10 1048576 6 0
+link 5 12500 10 1048576 3 7
+link 6 12500 10 1048576 4 8
+link 7 12500 10 1048576 1 9
+link 8 12500 10 1048576 9 5
+
+host 0 0 4 1
+host 1 0 7 0
+host 2 1 0 0
+host 3 1 5 0
+host 4 2 6 0
+host 5 2 8 1
+
+port 0 2 0 1
+port 1 7 1 0
+port 2 0 4 0
+port 3 6 1 1
+port 4 3 5 1
+port 5 8 2 0
+port 6 7 2 1
+port 7 4 6 1
+port 8 9 3 0
+port 9 8 3 1
+port 10 1 7 1
+port 11 5 8 0
+
+router 0 0 1 2
+router 1 3 4 5
+router 2 6 7 8
+router 3 9 10 11
